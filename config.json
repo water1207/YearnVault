@@ -1,0 +1,10 @@
+{
+  "main": "./contracts/YearnVault.sol",
+  "deploy": "./build/contracts/YearnVault.json",
+  "compilers": {
+    "cfxtruffle": "0.0.8",
+    "solc": "0.8.0",
+    "evmVersion": "istanbul"
+  },
+  "linter": "solhint"
+}
