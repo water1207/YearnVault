@@ -10,7 +10,12 @@ contract YearnVault is ERC20 {
 
     mapping(address => mapping(address => uint256)) private _allowances;
 
-    constructor(address _addr) ERC20("vSCFX", "vSCFX") { 
+    constructor(address _addr) 
+        ERC20(
+            string(abi.encodePacked("x", ERC20(_addr).name())),
+            string(abi.encodePacked("x", ERC20(_addr).symbol()))
+        ) 
+    { 
         addr = _addr;
         token = ERC20(addr);
     }
