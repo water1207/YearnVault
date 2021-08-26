@@ -1,0 +1,9 @@
+# dependencies  npm包文件
+/node_modules
+
+package-lock.json
+
+# misc 
+.DS_Store
+
+npm-debug.log*
